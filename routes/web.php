@@ -19,13 +19,22 @@ Route::get('/', function () {
     return view('home');
 })->middleware('auth');
 
-
-// Auth::routes();
-
+// Authentication Routes...
 Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('/login', 'Auth\LoginController@login');
 Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Admin
+Route::group( ['middleware' => ['auth', 'can:admin']], function() {
 
-Route::get('/pdf', 'DocumentController@downloadPdf');
+  // USER
+  Route::post('/api/admin/user', 'UserController@index')->name('admin/user');
+  Route::post('/api/admin/user/store', 'UserController@store')->name('admin/user/store');
+  Route::post('/api/admin/user/destroy', 'UserController@destroy')->name('admin/user/destroy');
+});
+
+// Other
+Route::get('/{any}', function () {
+  return view('home');
+})->middleware('auth')->where('any', '.*');
+
