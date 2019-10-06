@@ -33,6 +33,8 @@ Route::group( ['middleware' => ['auth', 'can:admin']], function() {
   Route::post('/api/admin/user/destroy', 'UserController@destroy')->name('admin/user/destroy');
 });
 
+Route::get('/pdf', 'DocumentController@downloadPdf');
+
 // Other
 Route::get('/{any}', function () {
   return view('home');

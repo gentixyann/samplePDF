@@ -5,15 +5,20 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use TCPDF;
 use TCPDF_FONTS;
+use App\User;
+use Illuminate\Support\Facades\Auth; 
 
 class DocumentController extends Controller
 {
-    public function downloadPdf()
+    public function downloadPdf(User $user)
     {
+        $user = Auth::user();
         // ダミーデータ設定
         $data['test01'] = "01 - あいうえお - left";
         $data['test02'] = "02 - あいうえお - center";
         $data['test03'] = "03 - あいうえお - right";
+        $data['test04'] = $user->name;
+        $data['test05'] = $user->loginid;
 
         // PDF 生成メイン　－　A4 縦に設定
         $pdf = new TCPDF("P", "mm", "A4", true, "UTF-8" );
@@ -21,7 +26,7 @@ class DocumentController extends Controller
         $pdf->setPrintFooter(false);
 
         // PDF プロパティ設定
-        $pdf->SetTitle('Title aiueo あいうえお');  // PDFドキュメントのタイトルを設定  http://tcpdf.penlabo.net/method/s/SetTitle.html
+        $pdf->SetTitle('ユーザー情報');  // PDFドキュメントのタイトルを設定  http://tcpdf.penlabo.net/method/s/SetTitle.html
         $pdf->SetAuthor('Author aiueo あいうえお');  // PDFドキュメントの著者名を設定  http://tcpdf.penlabo.net/method/s/SetAuthor.html
         $pdf->SetSubject('Subject aiueo あいうえお');  // PDFドキュメントのサブジェクト(表題)を設定  http://tcpdf.penlabo.net/method/s/SetSubject.html
         $pdf->SetKeywords('KEY1 KEY2 KEY3 あいうえお'); // PDFドキュメントのキーワードを設定 http://tcpdf.penlabo.net/method/s/SetKeywords.html

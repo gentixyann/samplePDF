@@ -14,12 +14,17 @@
   .font_m { font-size: 12; }
 </style>
 </head>
-<body class="color_white"><table border="1" width="100%" cellpadding="10" cellspacing="10">
+<body class="color_white">
+  <table border="1" width="100%" cellpadding="10" cellspacing="10">
     <tr class="color_blue">
       <td class="title25 font_s left  ">@isset($test01) {{ $test01 }} @endisset</td>
       <td class="title50 font_m center">@isset($test02) {{ $test02 }} @endisset</td>
       <td class="title25 font_s right ">@isset($test03) {{ $test03 }} @endisset</td>
     </tr>
   </table>
+  <div>
+     <h2 class="title50 font_s center ">@isset($test04) {{ $test04 }} @endisset</h2>
+      <div class="title25 font_s center ">@isset($test05) {{ $test05 }} @endisset</div>
+  </div>
 </body>
 </html>

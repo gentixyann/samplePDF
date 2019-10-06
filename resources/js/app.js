@@ -22,23 +22,11 @@ import router from './router/index.js'
 
 Vue.use(Vuetify, {
   theme: {
-    light: {
-        primary: colors.purple,
-        secondary: colors.grey.darken1,
-        accent: colors.shades.black,
-        error: colors.red.accent3,
-      },
-      dark: {
-        primary: colors.purple,
-        secondary: colors.grey.darken1,
-        accent: colors.shades.black,
-        error: colors.red.accent3,
-      },
+    primary: colors.amber.base,
+    secondary: colors.blue.base,
+    accent: colors.indigo.base,
   }
 });
-
-window.Vue = require('vue');
-
 
 
 import 'vuetify/dist/vuetify.min.css'
