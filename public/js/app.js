@@ -2334,6 +2334,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {};
@@ -39202,16 +39205,14 @@ var render = function() {
                         [
                           _c(
                             "v-btn",
-                            {
-                              attrs: { flat: "", small: "", fab: "" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.dialogOpen(_vm.props.item)
-                                }
-                              }
-                            },
+                            { attrs: { flat: "", small: "", fab: "" } },
                             [
-                              _vm._v("\n          ダウンロード\n          "),
+                              _c("a", { attrs: { href: "/pdf", title: "" } }, [
+                                _vm._v(
+                                  "\n                ダウンロード\n              "
+                                )
+                              ]),
+                              _vm._v(" "),
                               _c("v-icon", { attrs: { color: "success" } }, [
                                 _vm._v("create")
                               ])

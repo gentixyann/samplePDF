@@ -6,9 +6,12 @@
           <v-card xs12 class="m-3 px-3">
              <v-card-title class="title">ダウンロード</v-card-title>
              <div class="text-center">
-              <v-btn flat small fab @click="dialogOpen(props.item)">
-            ダウンロード
-            <v-icon color="success">create</v-icon></v-btn>
+              <v-btn flat small fab>
+                <a href="/pdf" title="">
+                  ダウンロード
+                </a>
+            <v-icon color="success">create</v-icon>
+          </v-btn>
              </div>
           </v-card>
         </v-flex>
