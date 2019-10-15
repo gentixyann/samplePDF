@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <style type="text/css">
   .title25 { width: 25%; }
-  .title50 { width: 40%; }
+  .title50 { width: 50%; }
   .left {  text-align: left; }
   .center {  text-align: center; }
   .right {  text-align: right; }
@@ -12,25 +12,43 @@
   .color_blue  { background-color: #99f; }
   .font_s { font-size: 8; }
   .font_m { font-size: 12; }
-  .font_l { font-size: 30; }
-  .pad_l { padding-left: 30; }
+  .font_bold { font-weight: bold;  }
   table, th, td {
     border: none;
 }
+.pad {padding: 0px 2px;}
+
+img {
+  width: 300px;
+  height: 200px;
+}
+
 </style>
 </head>
 <body class="color_white">
   <table width="100%" cellpadding="10" cellspacing="10">
-    <tr class="title50">
-    <th>確認書[オッケーしてね]</th><th>ID </th><th>名前 </th>
+    <tr>
+    <th>確認書[オッケーしてね]</th><th colspan="2">ID @isset($test05) {{ $test05 }} @endisset</th>
   </tr>
-   <tr class="title50">
-    <th>確認書[オッケーしてね]</th><th>味</th><th>色</th>
+   <tr>
+    <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
+    <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
+  </tr>
+  <tr>
+    <td class="font_bold">ンゴの良さ</td>
+    <td class="font_bold">わかりますよ</td>
+  </tr>
+   <tr>
+    <td><img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
+    <td>
+      <h2 class="font_bold">キッチンのスポンジ</h2>
+      <p>ふわふわになりました。まるでお祭りの日の綿あめのようでしたよ！</p>
+    </td>
+  </tr>
+   <tr>
+    <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
+    <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
   </tr>
   </table>
-  <div>
-     <h2 class="title50 font_s center ">ユーザーネーム</h2>
-      <div class="title25 font_s center ">email</div>
-  </div>
 </body>
 </html>

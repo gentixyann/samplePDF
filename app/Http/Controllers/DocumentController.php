@@ -53,7 +53,7 @@ class DocumentController extends Controller
         $pdf->addPage();
 
         $pdf->resetColumns();
-        $pdf->setEqualColumns(2, 84);
+        $pdf->setEqualColumns(2, 90);
         $pdf->selectColumn();
 
 

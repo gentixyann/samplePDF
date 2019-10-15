@@ -15,7 +15,7 @@
   table, th, td {
     border: none;
 }
-.pad {padding: 5px;}
+.pad {padding: 2px;}
 </style>
 </head>
 <body class="color_white">
