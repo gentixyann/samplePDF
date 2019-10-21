@@ -5,6 +5,7 @@
 <style type="text/css">
   .title25 { width: 25%; }
   .title50 { width: 50%; }
+  .title15 { width: 15%; }
   .left {  text-align: left; }
   .center {  text-align: center; }
   .right {  text-align: right; }
@@ -26,35 +27,36 @@ img {
 </style>
 </head>
 <body class="color_white">
-  <table width="100%" cellpadding="10" cellspacing="10">
+  <table width="100%" cellpadding="5" cellspacing="10">
     <tr>
-    <th>確認書[オッケーしてね]</th><th>ID @isset($test05) {{ $test05 }} @endisset</th>
+    <th>確認書[外装]</th>
+    <th>ID @isset($test05) {{ $test05 }} @endisset</th>
+    <th>お名前: かたさん</th>
   </tr>
-    <tr class="color_blue">
-      <td class="title50 font_s left  ">@isset($test01) {{ $test01 }} @endisset</td>
-      {{-- <td class="title50 font_m center">@isset($test02) {{ $test02 }} @endisset</td> --}}
-      <td class="title50 font_s right ">@isset($test03) {{ $test03 }} @endisset</td>
-    </tr>
+  {{--   <tr class="color_blue">
+      <td class="title15 font_bold left  ">@isset($test01) {{ $test01 }} @endisset</td>
+      <td class="title15 font_bold center">@isset($test02) {{ $test02 }} @endisset</td>
+      <td class="title15 font_bold right ">@isset($test03) {{ $test03 }} @endisset</td>
+    </tr> --}}
    <tr>
     <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
     <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
-  </tr>
-  <tr>
-    <td class="font_bold">ンゴの良さ</td>
-    <td class="font_bold">わかりますよ</td>
-  </tr>
-   <tr>
-    <td class="center">
-      <br><br><br><br><br><img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
-    </td>
-    <td>
-      <h2 class="font_bold">キッチンのスポンジ</h2>
-      <p>ふわふわになりました。まるでお祭りの日の綿あめのようでしたよ！</p>
-    </td>
+     <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
   </tr>
    <tr>
     <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
     <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
+     <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
+  </tr>
+   <tr>
+    <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
+    <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
+     <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
+  </tr>
+   <tr>
+    <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
+    <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
+     <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
   </tr>
   </table>
 </body>
