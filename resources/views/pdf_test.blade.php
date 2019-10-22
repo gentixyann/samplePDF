@@ -14,50 +14,191 @@
   .font_s { font-size: 8; }
   .font_m { font-size: 12; }
   .font_bold { font-weight: bold;  }
-  table, th, td {
+  table, th, td  {
     border: none;
+    padding: 0;
 }
-.pad {padding: 0px 2px;}
 
-img {
-  width: 300px;
-  height: 200px;
+td {
+  height: 25%;
+}
+.pad {padding: 0px;}
+
+table.border td {
+  border: 1px solid #000000;
+}
+td.padding-row {
+  line-height: 50%;
 }
 
 </style>
 </head>
 <body class="color_white">
-  <table width="100%" cellpadding="5" cellspacing="10">
+
+  <table width="100%" height="1400px" cellpadding="0" cellspacing="10">
     <tr>
-    <th>確認書[外装]</th>
-    <th>ID @isset($test05) {{ $test05 }} @endisset</th>
-    <th>お名前: かたさん</th>
+    <td>確認書[外装]</td>
+    <td>ID @isset($test05) {{ $test05 }} @endisset</td>
+    <td>お名前: かたさん</td>
   </tr>
-  {{--   <tr class="color_blue">
-      <td class="title15 font_bold left  ">@isset($test01) {{ $test01 }} @endisset</td>
-      <td class="title15 font_bold center">@isset($test02) {{ $test02 }} @endisset</td>
-      <td class="title15 font_bold right ">@isset($test03) {{ $test03 }} @endisset</td>
-    </tr> --}}
+
    <tr>
-    <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
-    <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
-     <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
+    <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">屋根</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+   <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">雨樋</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+     <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">軒天</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
   </tr>
+
    <tr>
-    <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
-    <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
-     <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
+    <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">屋根</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+   <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">雨樋</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+     <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">軒天</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
   </tr>
+
+
+    <tr>
+    <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">屋根</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+   <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">雨樋</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+     <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">軒天</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+  </tr>
+
    <tr>
-    <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
-    <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
-     <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
+    <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">屋根</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+   <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">雨樋</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+     <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">軒天</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
   </tr>
+
+  <tr>
+        <td class="padding-row"> 
+        </td>
+      </tr>
+
    <tr>
-    <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
-    <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
-     <td><img class="pad" src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg"></td>
+    <td>確認書[外装]</td>
+    <td>ID @isset($test05) {{ $test05 }} @endisset</td>
+    <td>お名前: かたさん</td>
   </tr>
+
+
+  <tr>
+    <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">屋根</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+   <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">雨樋</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+     <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">軒天</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+  </tr>
+
+   <tr>
+    <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">屋根</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+   <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">雨樋</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+     <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">軒天</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+  </tr>
+
+   <tr>
+    <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">屋根</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+   <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">雨樋</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+     <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">軒天</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+  </tr>
+
+   <tr>
+    <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">屋根</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+   <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">雨樋</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+     <td>
+      <img src="http://livedoor.blogimg.jp/nanjmatomengo/imgs/0/8/08338d6c.jpg">
+        <br><span class="font_bold">軒天</span><br>
+        <br><span class="font_s">１２３４５６｜１０｜１２３４５６｜２０｜１２３４５６｜３０｜１２</span><br>
+    </td>
+  </tr>
+
   </table>
 </body>
 </html>

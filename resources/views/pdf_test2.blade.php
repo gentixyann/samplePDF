@@ -14,12 +14,14 @@
   .font_m { font-size: 12; }
   table, th, td {
     border: none;
+    padding: 0;
 }
+
 .pad {padding: 2px;}
 </style>
 </head>
 <body class="color_white">
-<table width="100%" cellpadding="5" cellspacing="10">
+<table width="100%" height="700px" cellpadding="0" cellspacing="10">
   <tr>
     <td>ここから2つ目</td>
     <td>ここから2つ目</td>
