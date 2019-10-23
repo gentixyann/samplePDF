@@ -28,7 +28,12 @@ table.border td {
   border: 1px solid #000000;
 }
 td.padding-row {
-  line-height: 50%;
+  line-height: 150px;
+}
+
+img.logo {
+  width: 30px;
+  height: 20px;
 }
 
 </style>
@@ -116,14 +121,14 @@ td.padding-row {
   </tr>
 
   <tr>
-        <td class="padding-row"> 
-        </td>
-      </tr>
+    <td colspan="3" class="padding-row"></td>
+  </tr>
+
 
    <tr>
-    <td>確認書[外装]</td>
-    <td>ID @isset($test05) {{ $test05 }} @endisset</td>
-    <td>お名前: かたさん</td>
+    <td colspan="3" class="right">
+      <img class="logo" src="https://memotora.com/wp-content/uploads/2015/02/eye-catch-web-rev2.png">
+    </td>
   </tr>
 
 
