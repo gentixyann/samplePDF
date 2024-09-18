@@ -10,7 +10,7 @@
     "watch-poll": "npm run watch -- --watch-poll"
   },
   "devDependencies": {
-    "axios": "^1.6",
+    "axios": "^1.7",
     "bootstrap": "^4.1.0",
     "cross-env": "^5.1",
     "jquery": "^3.5",
