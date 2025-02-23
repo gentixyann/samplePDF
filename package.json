@@ -20,13 +20,13 @@
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.15.2",
     "sass-loader": "^7.1.0",
-    "vue": "^2.5.17",
+    "vue": "^3.5.13",
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
     "css-loader": "^6.8.1",
     "material-design-icons-iconfont": "^5.0.1",
     "vue-router": "^3.0.7",
-    "vuetify": "^1.5.16"
+    "vuetify": "^3.7.13"
   }
 }
